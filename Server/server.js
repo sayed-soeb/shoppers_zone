@@ -13,7 +13,8 @@ const PORT = 3001;
 require('dotenv').config();
 // Connect to MongoDB
 mongoose.connect(process.env.DbUrl, {
-useUnifiedTopology: true
+  useNewUrlParser:true,
+useUnifiedTopology: true,
 });
 
 // Create a user schema
