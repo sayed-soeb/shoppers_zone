@@ -1,0 +1,86 @@
+/* AmazonHome.css */
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.product-image img {
+  padding-top: 10px;
+  width: 65%;
+  height: 220px; /* Adjusted height */
+}
+
+.product-details {
+  padding: 15px;
+  align-items: flex-end;
+}
+
+.product-name {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.product-price {
+  font-size: 16px;
+}
+
+.add-to-cart-btn {
+  background-color: #f90;
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #d38000;
+}
+
+/* Media queries for responsiveness */
+
+/* For screens between 600px and 768px */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .product-container {
+    gap: 10px;
+  }
+
+  .product {
+    width: 48%;
+  }
+}
+
+/* For screens between 769px and 1024px */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .product-container {
+    gap: 15px;
+  }
+
+  .product {
+    width: 32%;
+  }
+}
+
+/* For screens larger than 1024px */
+@media only screen and (min-width: 1025px) {
+  /* You can adjust styles for larger screens here if needed */
+}
