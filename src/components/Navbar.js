@@ -58,7 +58,7 @@ function Navbar({ onSearch ,carts , logs , empty ,add}) {
 
   const handleLogout = async () => {
     try {
-      const response = await axios.post("http://localhost:3001/logout");
+      const response = await axios.post("https://ecommerce-app-by-rayyan.onrender.com/logout");
       // Store user information in local storage
       localStorage.removeItem("user");
       setName('');

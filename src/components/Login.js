@@ -13,7 +13,7 @@ const Login = ({logs}) => {
 
   const handleLogin = async (log) => {
     try {
-      const response = await axios.post("http://localhost:3001/login", {
+      const response = await axios.post("https://ecommerce-app-by-rayyan.onrender.com/login", {
         email,
         password,
       });

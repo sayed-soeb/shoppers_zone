@@ -16,7 +16,7 @@ const Signup = () => {
 
   const handleSignup = async () => {
     try {
-      const response = await axios.post("http://localhost:3001/signup", {
+      const response = await axios.post("https://ecommerce-app-by-rayyan.onrender.com/signup", {
         username,
         email,
         password,
